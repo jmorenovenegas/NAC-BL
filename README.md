@@ -27,6 +27,14 @@ Analysis steps:
 - Extract genes from a linkcomm enriched function
 - Annotate which genes were present in the panel, and if it has been activated o inibited
 
+Instructions to perform the analysis:
+
+1. Install python required libraries (see below)
+2. Set path to python source with required libraries inside chemoRes_NAC-BL.R. 
+3. Run chemoRes_NAC-BL.R by console or in RStudio (recommended).
+4. Run link_communities.R. You must pass .gml files obtained in the previous analysis as arguments.
+5. Run select_biolprocess.R
+
 Used R functions available in RCode directory.
 
 Interactomes used in DIAMOnD available in Interactomes directory.
@@ -35,4 +43,17 @@ RCode/interactomes_processing.R is the script used to process the interactomes.
 
 More information is available in the scripts.
 
-R version 3.5.1
+R version 3.5.1 in RStudio
+- NanoStringQCPro
+- dplyr 
+- WGCNA
+- biomaRt
+- clusterProfiler
+- linkcomm
+- ggplot2
+- igraph
+
+Python version used 2.7.15
+- networkx
+- scipy 
+- numpy
