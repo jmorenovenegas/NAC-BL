@@ -32,7 +32,7 @@ Instructions to perform the analysis:
 1. Install python required libraries (see below)
 2. Set path to python source with required libraries inside chemoRes_NAC-BL.R. 
 3. Run chemoRes_NAC-BL.R by console or in RStudio (recommended).
-4. Run link_communities.R. You must pass .gml files obtained in the previous analysis as arguments.
+4. Run link_communities.R (recommended in RStudio to adjust parameters). You must pass the .gml files obtained in the previous analysis as input.
 5. Run select_biolprocess.R
 
 Used R functions available in RCode directory.
@@ -52,6 +52,10 @@ R version 3.5.1 in RStudio
 - linkcomm
 - ggplot2
 - igraph
+- org.Hs.eg.db
+- biomaRt
+- pathview
+- ReactomePA
 
 Python version used 2.7.15
 - networkx
